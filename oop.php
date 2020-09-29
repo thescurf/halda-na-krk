@@ -1,36 +1,60 @@
-<?php
+$instance = new Vrzoň;
+class Vrzoň {
+    public $okacko1 = 10; 
+    public $okacko2 = 3;
+    public $okacko3 = 50;
+    public $okacko4 = 11;
+    public $okacko5 = 29 ;
+    protected $okacko6 = 26;
+    protected $okacko7 = 31; 
+    protected $okacko8 = 36;
+    private $okacko9 = 189;
+    private $okacko10 = 65;
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-//abstraktní trida ustredny a v ni protected $napetí
-abstract class  ustredny_Vrzoň_Vojtěch{
-
-    protected $napeti_Vrzoň_Vojtěch;
-    //nastavení napeti
-    public function setNapeti_Vrzoň_Vojtěch($napeti_Vrzoň_Vojtěch){
-        $this->napeti_Vrzoň_Vojtěch = $napeti_Vrzoň_Vojtěch;
+    public function getokacko1 () {
+       return $this-> okacko1;
     }
-    //precteni napeti
-    public function getNapeti_Vrzoň_Vojtěch() {
-        return $this-> napeti_VrzoŇ_Vojtěch;
+    public function getokacko2 () {
+       return $this-> okacko2;
     }
-}
-// class ustredna se dedi do abs. class ustredny
-class  ustredna_Vrzoň_Vojtěch extends ustredny_Vrzoň_Vojtěch{
-   public $Napeti_Vrzoň_Vojtěch= 15;
-   //nastaveni konstanty type
-   const TYPE ="12";
-}
-//class iustredna dedi interface od abs. class ustredny
-interface iustredna_Vrzoň_Vojtěch extends ustredny_Vrzoň_Vojtěch{
-    //vypise nastavene hodnoty
-    public function _contruct ($Napeti_Vrzoň_Vojtěch);
-}
+    public function getokacko3 () {
+       return $this-> okacko3;
+    }
+    public function getokacko4 () {
+       return $this-> okacko4;
+    }
+    public function getokacko5 () {
+       return $this-> okacko5;
+    }
 
-//pres vardummp vypise hodnotu v type a hodnotu napeti na ustredne
- var_dump (ustredna_Vrzoň_Vojtěch::TYPE);
- var_dump ($Napeti_Vrzoň_Vojtěch);
-?>
+    private function setokacko9 () {
+       return $this-> okacko9; 
+    }
+    private function setokacko10 () {
+        return $this-> okacko10;
+    }
+    public function _construct () {
+
+    }
+
+} 
+var_dump ($instance);
+$okacko1 = new Vrzoň();
+$okacko1-> getokacko1('10');
+echo $okacko1-> getokacko1();
+echo '<br>';
+$okacko2 = new Vrzoň();
+$okacko2-> getokacko2('3');
+echo $okacko2-> getokacko2();
+echo '<br>';
+$okacko3 = new Vrzoň();
+$okacko3-> getokacko3('50');
+echo $okacko3-> getokacko3();
+echo '<br>';
+$okacko4 = new Vrzoň();
+$okacko4-> getokacko4('11');
+echo $okacko4-> getokacko4();
+echo '<br>';
+$okacko5 = new Vrzoň();
+$okacko5-> getokacko5('29');
+echo $okacko5-> getokacko5();
