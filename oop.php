@@ -1,3 +1,4 @@
+<?php
 $instance = new Vrzoň;
 class Vrzoň {
     public $okacko1 = 10; 
@@ -39,22 +40,20 @@ class Vrzoň {
 
 } 
 var_dump ($instance);
-$okacko1 = new Vrzoň();
-$okacko1-> getokacko1('10');
-echo $okacko1-> getokacko1();
+$cisla = new Vrzoň();
+$cisla-> getokacko1('10');
+echo $cisla-> getokacko1();
 echo '<br>';
-$okacko2 = new Vrzoň();
-$okacko2-> getokacko2('3');
-echo $okacko2-> getokacko2();
+$cisla-> getokacko2('3');
+echo $cisla-> getokacko2();
 echo '<br>';
-$okacko3 = new Vrzoň();
-$okacko3-> getokacko3('50');
-echo $okacko3-> getokacko3();
+$cisla-> getokacko3('50');
+echo $cisla-> getokacko3();
 echo '<br>';
-$okacko4 = new Vrzoň();
-$okacko4-> getokacko4('11');
-echo $okacko4-> getokacko4();
+$cisla-> getokacko4('11');
+echo $cisla-> getokacko4();
 echo '<br>';
-$okacko5 = new Vrzoň();
-$okacko5-> getokacko5('29');
-echo $okacko5-> getokacko5();
+$cisla-> getokacko5('29');
+echo $cisla-> getokacko5();
+
+?>;
