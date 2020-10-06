@@ -1,18 +1,18 @@
 <?php
 $instance = new Vrzoň;
-class Vrzoň {
-    public $okacko1 = 10; 
+class Vrzoň {//definice class Vrzoň
+    public $okacko1 = 10;//definice typu funkce
     public $okacko2 = 3;
     public $okacko3 = 50;
     public $okacko4 = 11;
     public $okacko5 = 29 ;
-    protected $okacko6 = 26;
+    protected $okacko6 = 26;//definice chráněné funkce
     protected $okacko7 = 31; 
     protected $okacko8 = 36;
-    private $okacko9 = 189;
+    private $okacko9 = 189;//definice privátní funkce
     private $okacko10 = 65;
 
-    public function getokacko1 () {
+    public function getokacko1 () {//definice veřejné funkce
        return $this-> okacko1;
     }
     public function getokacko2 () {
@@ -39,10 +39,10 @@ class Vrzoň {
     }
 
 } 
-var_dump ($instance);
+var_dump ($instance);//vypíše hodnoty
 $cisla = new Vrzoň();
 $cisla-> getokacko1('10');
-echo $cisla-> getokacko1();
+echo $cisla-> getokacko1();//vypíše hodnotu getokacko1
 echo '<br>';
 $cisla-> getokacko2('3');
 echo $cisla-> getokacko2();
